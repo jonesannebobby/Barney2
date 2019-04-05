@@ -1,9 +1,4 @@
-'''
-Created on 3 Mar 2019
 
-@author: andrew
-
-'''
 from os import system
 
 from utils.ConversationManager import ConversationManager
