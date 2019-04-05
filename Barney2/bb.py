@@ -12,7 +12,7 @@ conversationManager = ConversationManager()
 
 system('clear')
 print("------------------------------------------")
-print("             B A R N E Y 2")
+print("             B-A-R-N-E-Y-2")
 print("------------------------------------------")
 print("")
 
