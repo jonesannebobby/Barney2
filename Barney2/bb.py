@@ -9,6 +9,7 @@ system('clear')
 print("------------------------------------------")
 print("------------------------------------------")
 print("             B-A-R-N-E-Y-2")
+print("             B B")
 print("------------------------------------------")
 print("------------------------------------------")
 print("")
@@ -19,11 +20,11 @@ while True:
     sentence = conversationManager.getNextSentenceText()
     
     if conversationManager.isConversationOver == True:
-        print(f"b2 : " + sentence.wordsSpoken)
+        print(f"bb : " + sentence.wordsSpoken)
         break
     
     else:
-        answer = input("b2 : " + sentence.wordsSpoken + """
+        answer = input("bb : " + sentence.wordsSpoken + """
 mb : """)
         conversationManager.saveAnswer(answer)
     
