@@ -12,7 +12,7 @@ class WeatherTopic(Topic):
     def getNextSentenceFromLastSentence(self, lastSentence: Sentence):
  
         if lastSentence.containsPhrase("WEATHER"):
-            return Sentence(Direction.OUT,"The weather tomorrow will be Sunny and showers")
+            return Sentence(Direction.OUT,"The weather tomorrows will be Sunny and showers")
         
         return None
         
