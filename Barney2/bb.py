@@ -6,7 +6,7 @@ from utils.ConversationManager import ConversationManager
 conversationManager = ConversationManager()
 
 system('clear')
-print("------------------------------------------")
+print("-+=+=+=+=+=+=+=+=+=+=+=+=+=+++=+=+++==++--")
 print("------------------------------------------")
 print("             B-A-R-N-E-Y-2")
 print("             B . . - . . B")
