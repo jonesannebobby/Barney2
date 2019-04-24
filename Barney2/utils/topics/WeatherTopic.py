@@ -2,6 +2,7 @@
 from utils.Topic import Topic
 from utils.Direction import Direction
 from utils.Sentence import Sentence
+from utils.app.weather.OpenWeatherApp import OpenWeatherApp
 
 class WeatherTopic(Topic):
 
@@ -12,7 +13,13 @@ class WeatherTopic(Topic):
     def getNextSentenceFromLastSentence(self, lastSentence: Sentence):
  
         if lastSentence.containsPhrase("WEATHER"):
-            return Sentence(Direction.OUT,"The weather tomorrows will be Sunny and showers")
+            return Sentence(Direction.OUT,self.getTomorrowsWeather())
         
         return None
+
+
+    def getTomorrowsWeather(self):
         
+        weatherApp = OpenWeatherApp()
+        return weatherApp.getWeatherForTomorrow()
+    
