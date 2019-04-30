@@ -8,6 +8,7 @@ class Sentence:
         self.wordsSpoken = wordsSpoken
 
     def containsPhrase(self, phrase: str):
-        return phrase in self.wordsSpoken.upper()
+        return " " + phrase.upper() + " " in " " + self.wordsSpoken.upper() + " "
+    
     
 
